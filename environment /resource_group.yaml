@@ -1,0 +1,31 @@
+# Azure Resource Group Configuration
+provider: azure
+resource_type: resource_group
+
+# Resource Configuration
+name: alkcustomerdev
+location: westus
+
+# Tags
+tags:
+  CostCenter: Engineering
+  Owner: DevOps Team
+  Project: DeployHub
+  Purpose: Staging Environment
+
+
+# Resource Protection
+prevent_destroy: false
+enable_resource_lock: false
+lock_level: CanNotDelete
+lock_notes: Protected by Terragrunt - Prevent accidental deletion
+
+# RBAC Assignments (optional)
+rbac_assignments: {}
+
+# Diagnostics (optional)
+enable_diagnostics: false
+diagnostic_logs:
+  - category: Administrative
+  - category: Security
+  - category: Policy
