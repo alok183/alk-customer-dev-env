@@ -3,7 +3,7 @@ provider: azure
 resource_type: resource_group
 
 # Resource Configuration
-name: alkcustdevnew
+name: alkcustdevupdate
 location: westus
 
 # Tags
