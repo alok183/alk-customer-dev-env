@@ -6,7 +6,7 @@ dependencies: []
 
 
 # Resource Configuration
-name: deployhub-staging-rg
+name: demo-test-new
 location: westus
 
 # Tags (support both string JSON and object)
