@@ -1,12 +1,15 @@
 # Azure Resource Group Configuration
-provider: azure
-resource_type: resource_group
+module_name: resource-group
+priority: 1
+description: "Resource Group for democustomer1 in azure-dev environment"
+dependencies: []
+
 
 # Resource Configuration
-name: alkcustdevenv
+name: deployhub-staging-rg
 location: westus
 
-# Tags
+# Tags (support both string JSON and object)
 tags:
   CostCenter: Engineering
   Owner: DevOps Team
@@ -24,7 +27,7 @@ lock_notes: Protected by Terragrunt - Prevent accidental deletion
 rbac_assignments: {}
 
 # Diagnostics (optional)
-enable_diagnostics: false
+enable_diagnostics: true
 diagnostic_logs:
   - category: Administrative
   - category: Security
